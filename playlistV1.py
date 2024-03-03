@@ -5,7 +5,7 @@ import requests
 
 # Function to fetch video title using YouTube Data API
 def get_video_title(video_id):
-    api_key = "AIzaSyCyvuGPfu4W5rKMwctn4b9kIaQWwg1cwHU"
+    api_key = "<YOUR_YOUTUBE_API_KEY>"
     url = f"https://www.googleapis.com/youtube/v3/videos?id={video_id}&key={api_key}&part=snippet"
     response = requests.get(url)
     data = response.json()
